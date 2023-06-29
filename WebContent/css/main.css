@@ -1,0 +1,182 @@
+
+
+.body{
+	font-family: 'M PLUS 1', sans-serif;
+	margin: 0%;
+	
+}
+/* ヘッダー要素 */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* 背景色を透明に設定 */
+  box-shadow: none;
+  z-index: 999;
+}
+
+/* ヘッダーロゴ */
+.header_logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header_logo img {
+  width: 193px;
+  height: 130px;
+}
+
+/* ヘッダーナビゲーション */
+.header_nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header_nav-item {
+  margin-left: 10px;
+}
+
+.header_nav-link {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.link_click {
+  font-weight: bold;
+}
+
+/* フッター */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-left img {
+  max-width: 100%; /* ロゴの幅を100%に制限 */
+  height: auto;
+  max-height: 130px; /* ロゴの高さを最大値で制限 */
+}
+
+.footer-right {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.footer-right p {
+  margin: 0;
+  font-size: 12px;
+  color: #999999;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+ /* ホームスライドショー */
+.home-space {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-space img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ /* 横流しスライドショー */
+.slider-img{
+  width: 250px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  min-width: 100%; /* 画像が途切れないように最小幅を指定 */
+}
+
+.slideshow {
+  display: flex;
+  -webkit-animation: loop-slide 20s infinite linear 1s both;
+  animation:loop-slide 10s infinite linear 0s both;
+  padding: 0px;
+  margin:0px;
+  height: 100%;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  overflow: hidden;
+  background-color: black;
+}
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.main-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* グリッド要素を左揃えにする */
+  background-color: black;
+}
+
+.main-banner-item {
+  width: 50%; /* グリッド要素の幅を計算し、余白を考慮 */
+  margin-bottom: 0px; /* グリッド要素の下に余白を追加 */
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(25px + 0.9vw);;
+  color:#4ccdbb;
+  font-weight: bold;
+}
+
+.center-content {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 1px #000;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+
+
+body{
+	background-color:#4ccdbb ;
+	font-family: 'M PLUS 1', sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* 背景色を透明に設定 */
+  box-shadow: none;
+  z-index: 999;
+}
+
+/* ヘッダーロゴ */
+.header_logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header_logo img {
+  width: 193px;
+  height: 130px;
+}
+
+/* ヘッダーナビゲーション */
+.header_nav {
+  display: flex;
+  list-style: none;
+  margin-right: 2%;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header_nav-item {
+  margin-left: 10px;
+}
+
+.header_nav-link {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.link_click {
+  font-weight: bold;
+  color: white;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #7122FA,
+    0 0 82px #7122FA,
+    0 0 92px #7122FA,
+    0 0 102px #7122FA,
+    0 0 151px #7122FA;
+}
+
+h1 {
+	margin-top: 10%;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #7122FA,
+    0 0 82px #7122FA,
+    0 0 92px #7122FA,
+    0 0 102px #7122FA,
+    0 0 151px #7122FA;
+}
+
+/* フォーム */
+.cart-custom form {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+select, input[type="submit"] {
+  margin: 5px;
+}
+.cart-custom{
+	text-align: right;
+}
+
+/* 商品の配置 */
+.cart-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0%;
+  color: white;
+}
+
+.cart-col {
+  width: 30%;
+  margin-top:0%;
+  text-align: center;
+  padding: 5px;
+}
+.cart-col-img{
+	height: 50%;
+}
+
+.cart-col-img img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.cart-col-articl{
+	margin-top: 3px;
+}
+
+.cart-col-articl span {
+  display: block;
+  text-align: center;
+  color:white ;
+  font-family: 'M PLUS 1', sans-serif;
+}
+.cart-col-articl-name{
+	font-size:4vh;
+}
+.cart-col-articl-price{
+	font-size: 5vh;
+}
+
+.cart-col-form form {
+  margin-top: 10px;
+}
+
+/* カートボタン */
+#addToCartForm {
+  display: inline;
+}
+
+/* カートへボタン */
+input[type="submit"][value="カートへ"] {
+  display: block;
+  margin-top: 10px;
+}
+
+/* カートへボタンを右寄せ */
+.cart-enter {
+  text-align: right;
+ 
+}
+
+/* ボタン共通のスタイル */
+.button-change,
+.button-cartin,
+.button-cart {
+  background-color: #8C55AA;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.button-change:hover,
+.button-cartin:hover,
+.button-cart:hover {
+  background-color: #ffffff;
+  color: #8C55AA;
+  border: 1px solid #8C55AA;
+}
+
+/* ボタンの配置調整 */
+.cart-custom,
+.cart-content,
+.cart-enter {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* カートへボタン */
+.button-cart {
+  background-color: #8C55AA;
+  color: #ffffff;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.button-cart:hover {
+  background-color: #ffffff;
+  color: #4ccdbb;
+  border: 1px solid #8C55AA;
+}
+
